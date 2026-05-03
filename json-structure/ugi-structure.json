@@ -1,0 +1,29 @@
+{
+  "title": "UGI Corporation API Structure",
+  "description": "JSON structure documentation for UGI utility account and service data entities.",
+  "entities": {
+    "EnergyAccount": {
+      "description": "A UGI utility customer account for natural gas, electric, or propane service.",
+      "fields": {
+        "accountNumber": "string — Unique account identifier",
+        "customerName": "string — Account holder name",
+        "serviceAddress": "object — Street address of service location",
+        "serviceType": "string(enum) — natural_gas | electric | propane",
+        "meterNumber": "string — Meter identifier",
+        "accountStatus": "string(enum) — active | inactive | pending | suspended",
+        "billingSummary": "object — Amount due, due date, last payment",
+        "usageSummary": "object — Current/previous readings, usage, billing period"
+      }
+    },
+    "MeterReading": {
+      "description": "A meter reading record for energy usage tracking.",
+      "fields": {
+        "meterNumber": "string — Meter identifier",
+        "readingDate": "string(date) — Date of the meter reading",
+        "readingValue": "number — Meter reading value",
+        "readingType": "string — actual | estimated | customer-submitted",
+        "usageUnit": "string — CCF | MCF | kWh | gallons"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/ugi/blob/main/json-schema/ugi-energy-account-schema.json",
+  "title": "UGI Energy Account",
+  "description": "Schema for a UGI utility customer account with service and billing information.",
+  "type": "object",
+  "properties": {
+    "accountNumber": {
+      "type": "string",
+      "description": "Unique UGI account identifier."
+    },
+    "customerName": {
+      "type": "string",
+      "description": "Full name of the account holder."
+    },
+    "serviceAddress": {
+      "type": "object",
+      "description": "Service delivery address.",
+      "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string" },
+        "zipCode": { "type": "string" }
+      }
+    },
+    "serviceType": {
+      "type": "string",
+      "enum": ["natural_gas", "electric", "propane"],
+      "description": "Type of energy service."
+    },
+    "meterNumber": {
+      "type": "string",
+      "description": "Meter identifier at the service address."
+    },
+    "accountStatus": {
+      "type": "string",
+      "enum": ["active", "inactive", "pending", "suspended"],
+      "description": "Current account status."
+    },
+    "billingSummary": {
+      "type": "object",
+      "description": "Current billing information.",
+      "properties": {
+        "amountDue": { "type": "number", "description": "Amount due in USD." },
+        "dueDate": { "type": "string", "format": "date" },
+        "lastPaymentAmount": { "type": "number" },
+        "lastPaymentDate": { "type": "string", "format": "date" }
+      }
+    },
+    "usageSummary": {
+      "type": "object",
+      "description": "Recent energy usage summary.",
+      "properties": {
+        "currentReading": { "type": "number" },
+        "previousReading": { "type": "number" },
+        "usage": { "type": "number" },
+        "usageUnit": {
+          "type": "string",
+          "enum": ["CCF", "MCF", "kWh", "gallons"],
+          "description": "Unit of energy measurement."
+        },
+        "billingPeriodStart": { "type": "string", "format": "date" },
+        "billingPeriodEnd": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

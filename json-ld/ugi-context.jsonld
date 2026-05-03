@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "ugi": "https://ugicorp.com/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "EnergyAccount": "schema:Account",
+    "Utility": "schema:PublicUtility",
+    "EnergyService": "schema:Product",
+    "ServiceLocation": "schema:Place",
+    "MeterReading": "ugi:MeterReading",
+
+    "accountNumber": { "@id": "schema:identifier", "@type": "xsd:string" },
+    "customerName": { "@id": "schema:name", "@type": "xsd:string" },
+    "serviceAddress": { "@id": "schema:address", "@type": "xsd:string" },
+    "serviceType": { "@id": "schema:additionalType", "@type": "xsd:string" },
+    "meterNumber": { "@id": "ugi:meterNumber", "@type": "xsd:string" },
+    "usage": { "@id": "schema:value", "@type": "xsd:double" },
+    "usageUnit": { "@id": "schema:unitCode", "@type": "xsd:string" },
+    "billingPeriod": { "@id": "schema:temporalCoverage", "@type": "xsd:string" },
+    "amountDue": { "@id": "schema:price", "@type": "xsd:double" },
+    "currency": { "@id": "schema:priceCurrency", "@type": "xsd:string" },
+    "dueDate": { "@id": "schema:paymentDueDate", "@type": "xsd:date" },
+    "startDate": { "@id": "schema:startDate", "@type": "xsd:date" },
+    "endDate": { "@id": "schema:endDate", "@type": "xsd:date" }
+  }
+}

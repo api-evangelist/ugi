@@ -1,0 +1,91 @@
+vocabulary:
+  name: UGI Corporation Vocabulary
+  description: >-
+    Domain vocabulary for UGI Corporation covering natural gas distribution, propane
+    retail, electric utilities, midstream energy services, and European energy distribution
+    operations across the UGI family of companies.
+  version: "1.0.0"
+  created: "2026-05-03"
+  modified: "2026-05-03"
+  source: https://www.ugicorp.com
+
+  domains:
+    - name: Energy Distribution
+      description: Natural gas and electricity distribution concepts.
+      terms:
+        - term: Natural Gas
+          definition: A fossil fuel hydrocarbon gas mixture used for heating, cooking, and electricity generation.
+        - term: LDC
+          definition: Local Distribution Company — a regulated utility that distributes natural gas to end users.
+          synonyms: [Local Distribution Company, Gas Utility]
+        - term: Distribution System
+          definition: The network of pipes and infrastructure delivering gas or electricity to end customers.
+        - term: Service Territory
+          definition: The geographic area in which a utility company is authorized to provide service.
+        - term: Meter Reading
+          definition: The measurement of energy usage recorded at a customer's meter for billing purposes.
+        - term: Smart Meter
+          definition: An advanced metering device that digitally records and communicates usage data.
+        - term: Green Button
+          definition: A standardized initiative allowing utility customers to download their energy usage data in a common format.
+        - term: EDI
+          definition: Electronic Data Interchange — the standard for electronic B2B data exchange in the utility industry.
+
+    - name: Propane
+      description: LPG and propane distribution concepts.
+      terms:
+        - term: LPG
+          definition: Liquefied Petroleum Gas — a portable fuel gas (propane, butane) stored in pressurized tanks.
+          synonyms: [Liquefied Petroleum Gas, Propane]
+        - term: AmeriGas
+          definition: The largest US retail propane distributor and a wholly-owned UGI subsidiary.
+        - term: Propane Delivery
+          definition: The scheduled or on-demand delivery of propane to residential or commercial tanks.
+        - term: Tank Monitoring
+          definition: Remote monitoring of propane tank levels to optimize delivery schedules.
+        - term: Will-Call
+          definition: A propane delivery model where customers contact the supplier to schedule delivery when needed.
+
+    - name: Customer Services
+      description: Customer account and service management terms.
+      terms:
+        - term: Budget Billing
+          definition: A payment plan spreading annual energy costs into equal monthly installments.
+          synonyms: [Levelized Billing, Equal Pay]
+        - term: AutoPay
+          definition: Automatic payment enrollment allowing bills to be paid automatically from a bank account or card.
+        - term: CAP
+          definition: Customer Assistance Program — a utility assistance program for income-qualified customers.
+        - term: LIHEAP
+          definition: Low Income Home Energy Assistance Program — federal program helping low-income households with energy costs.
+        - term: LIURP
+          definition: Low-Income Usage Reduction Program — a Pennsylvania utility program for energy efficiency in low-income homes.
+        - term: Energy Assistance
+          definition: Government and utility programs helping eligible customers afford energy costs.
+        - term: Net Metering
+          definition: A billing arrangement crediting customers who generate excess electricity from renewable sources.
+
+    - name: Business Segments
+      description: UGI Corporation's primary business units.
+      terms:
+        - term: UGI Utilities
+          definition: UGI's regulated natural gas and electric distribution segment serving Pennsylvania and Maryland.
+        - term: Midstream and Marketing
+          definition: UGI's energy marketing, wholesale, and midstream natural gas services segment.
+        - term: UGI International
+          definition: UGI's European LPG distribution operations across 17 countries.
+        - term: AmeriGas Propane
+          definition: UGI's retail propane segment serving all 50 US states.
+
+  categories:
+    - Energy
+    - Utilities
+    - Natural Gas
+    - Propane
+    - Electric
+    - Fortune 500
+    - Pennsylvania
+    - Europe
+    - Residential
+    - Commercial
+    - Industrial
