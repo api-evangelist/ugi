@@ -4,149 +4,42 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: UGI Corporation
 providerId: ugi
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
   - Energy
   - Utilities
   - Natural Gas
   - Propane
-  - Electric
   - Fortune 500
-  - Pennsylvania
-description: Machine-readable plans and pricing scaffold for this API provider. Conforms to the API Commons
-  Plans schema. Tier limits and prices are scaffold defaults; replace with provider-published values.
+description: UGI Corporation is a regulated natural-gas / propane / electric utility holding company
+  with no public developer portal and no published commercial API pricing. Any system integrations are
+  governed under regulated-utility data-sharing agreements or B2B partner contracts.
+notes: ugicorp.com fetch timed out; no public developer portal could be located. Trimmed to a single
+  Contact Sales plan reflecting the regulated-utility integration posture.
+sources:
+  - https://www.ugicorp.com/
 plans:
-  - id: ugi-free
-    name: Free
-    type: freemium
-    description: Free entry tier for the UGI Corporation API surface. Intended for evaluation, prototyping,
-      and low-volume integrations. Real limits and pricing must be reconciled with the provider's published
-      plan documentation.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota across all included endpoints
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 1000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the free tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 10
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-    elements:
-      - name: Public Documentation
-      - name: Community Support
-      - name: Sandbox Access
-      - name: UGI Utilities
-      - name: AmeriGas Propane
-      - name: UGI Energy Services
-      - name: UGI International
-  - id: ugi-pro
-    name: Professional
-    type: paid
-    description: Production tier for UGI Corporation. Provides higher quotas, priority support, and access
-      to the broader API portfolio. Pricing placeholder; align with the provider's pricing page.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 100000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: TBD
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the professional tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 100
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Overage
-        description: Per-request price after monthly quota is exceeded
-        name: overage
-        type: metered
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1000
-        price: TBD
-        userMultiplied: false
-    elements:
-      - name: All Production Endpoints
-      - name: Email Support
-      - name: SLA Targets
-      - name: Webhook Subscriptions
-      - name: UGI Utilities
-      - name: AmeriGas Propane
-      - name: UGI Energy Services
-      - name: UGI International
-  - id: ugi-enterprise
-    name: Enterprise
+  - id: ugi-contact-sales
+    name: Contact Sales
     type: enterprise
-    description: Custom-negotiated tier for UGI Corporation. Includes dedicated capacity, contractual
-      SLAs, security review, data residency options, and named technical account management.
+    description: All UGI integration access is contract-governed. Pricing and terms depend on the regulated-utility
+      data-sharing agreement or partner contract; there is no public price sheet.
     entries:
-      - label: API Requests
-        description: Negotiated request volume; -1 indicates uncapped subject to fair use
-        name: api_requests
-        type: quota
-        metric: requests
+      - label: Custom Contract
+        name: custom_contract
+        type: flat
+        metric: varies
         limit: -1
-        timeFrame: month
-        geo: configurable
-        domains: []
+        timeFrame: year
+        geo: US
         unit: 1
-        price: custom
-        userMultiplied: false
-      - label: Rate Limit
-        description: Negotiated burst and steady-state rate
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 1000
-        timeFrame: minute
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
+        price: contact sales
         userMultiplied: false
     elements:
-      - name: Unlimited / Negotiated Volume
-      - name: 24/7 Dedicated Support
-      - name: Contractual SLA
-      - name: Security & Compliance Review
-      - name: Dedicated Account Manager
-      - name: Custom Data Residency
-      - name: UGI Utilities
-      - name: AmeriGas Propane
-      - name: UGI Energy Services
-      - name: UGI International
+      - name: Regulated-Utility Data Sharing
+      - name: B2B Partner Integration
+      - name: Custom Contract
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

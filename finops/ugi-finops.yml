@@ -1,166 +1,62 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: UGI Corporation
+providerId: ugi
+created: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
+tags:
+  - Energy
+  - Utilities
+  - FinOps
+  - FOCUS
+description: 'FOCUS-aligned FinOps for UGI: regulated-utility holding company; no public API pricing
+  or usage-meter surface. Spend mapping is contract-driven and reconciled per integration agreement.'
+notes: UGI has no public developer portal or pricing surface. Meters and FOCUS columns are placeholders
+  pending reconciliation against actual contract invoices.
+sources:
+  - https://www.ugicorp.com/
+  - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
   dataSpec: FOCUS
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
-provider: UGI Corporation
-providerId: ugi
 publisherName: UGI Corporation
-serviceCategory: API
-created: '2026-05-04'
-modified: '2026-05-04'
-tags:
-  - Energy
-  - Utilities
-  - Natural Gas
-  - Propane
-  - Electric
-  - Fortune 500
-  - Pennsylvania
-  - FinOps
-  - Cost Management
-  - FOCUS
-description: FinOps framework definition for the UGI Corporation API surface. Provides a FOCUS-aligned
-  mapping for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+serviceCategory: Utility / Energy
 billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
+  pricingCategory: Custom Contract
+  billingFrequency: Per-Contract
   billingCurrency: USD
   chargeCategories:
-    - Usage
     - Purchase
-    - Tax
-    - Credit
     - Adjustment
-  chargeFrequency: Recurring
 focusColumns:
-  ServiceName: UGI Corporation
-  ServiceCategory: Developer Tools / API
+  ServiceName: UGI Integration
+  ServiceCategory: Utility / Energy
   ProviderName: UGI Corporation
   PublisherName: UGI Corporation
   InvoiceIssuerName: UGI Corporation
-  PricingCategory: Usage-Based
-  PricingUnit: request
   BillingCurrency: USD
-  ChargeCategory: Usage
 meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
+  - name: contract_term
+    description: Active partner integration contract period
+    unit: month
     aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
-    aggregation: sum
-    dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: UGI Utilities
-    baseURL: ''
-    tags:
-      - Natural Gas
-      - Electric
-      - Utilities
-      - Pennsylvania
-      - Energy Distribution
-    serviceName: UGI Utilities
-    serviceCategory: API
-  - name: AmeriGas Propane
-    baseURL: ''
-    tags:
-      - Propane
-      - Energy
-      - Retail
-      - Distribution
-      - Delivery
-    serviceName: AmeriGas Propane
-    serviceCategory: API
-  - name: UGI Energy Services
-    baseURL: ''
-    tags:
-      - Natural Gas
-      - Electricity
-      - Energy Services
-      - Commercial
-      - Industrial
-    serviceName: UGI Energy Services
-    serviceCategory: API
-  - name: UGI International
-    baseURL: ''
-    tags:
-      - LPG
-      - Natural Gas
-      - Europe
-      - International
-      - Energy Distribution
-    serviceName: UGI International
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+principles:
+  - name: Visibility
+    description: Reconcile spend from contracted utility data-sharing agreements; UGI does not expose
+      a public usage telemetry surface.
+  - name: Allocation
+    description: Allocate per consuming line of business (gas distribution, AmeriGas propane, electric)
+      per the contract scope.
+  - name: Optimization
+    description: Re-scope the contract on renewal based on actual data exchange volume; consolidate B2B
+      partner connections where possible.
+  - name: Accountability
+    description: Utility-IT and partner-management owners review contract performance and renewal terms.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
