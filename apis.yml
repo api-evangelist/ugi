@@ -23,6 +23,9 @@ tags:
   - Electric
   - Fortune 500
   - Pennsylvania
+common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ugi-corporation
 apis:
   - aid: ugi:ugi-utilities
     name: UGI Utilities
