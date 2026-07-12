@@ -24,6 +24,8 @@ tags:
   - Fortune 500
   - Pennsylvania
 common:
+  - type: DomainSecurity
+    url: security/ugi-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/ugi-corporation
 apis:
