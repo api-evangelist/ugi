@@ -21,30 +21,18 @@ Energy, Utilities, Natural Gas, Propane, Electric, Fortune 500, Pennsylvania
 
 ## Business Segments
 
-### UGI Utilities
-Natural gas and electric distribution services to approximately 700,000 customers in Pennsylvania and Maryland.
-
-**Website:** [https://www.ugi.com](https://www.ugi.com)
 
 #### Tags
 Natural Gas, Electric, Utilities, Pennsylvania, Energy Distribution
 
 ---
 
-### AmeriGas Propane
-The largest retail propane marketer in the United States, serving approximately 1.5 million customers across all 50 states.
-
-**Website:** [https://www.amerigas.com](https://www.amerigas.com)
 
 #### Tags
 Propane, Energy, Retail, Distribution, Delivery
 
 ---
 
-### UGI Energy Services
-Competitive natural gas and electricity supplier and midstream service provider for commercial and industrial customers in the northeastern US.
-
-**Website:** [https://ugies.com](https://ugies.com)
 
 #### Tags
 Natural Gas, Electricity, Energy Services, Commercial, Industrial

@@ -10,10 +10,22 @@ description: >-
   No public developer API has been identified; the company primarily uses EDI and utility
   industry standards for B2B data exchange.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: enterprise
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ugi.png
 access: 3rd-Party
 created: '2026-05-03'
-modified: '2026-05-03'
+modified: '2026-07-25'
 position: Consumer
 tags:
   - Energy
@@ -28,70 +40,13 @@ common:
     url: security/ugi-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/ugi-corporation
+  - type: Contact
+    url: https://www.ugi.com
+  - type: Contact
+    url: https://www.amerigas.com
+  - type: Contact
+    url: https://ugies.com
 apis:
-  - aid: ugi:ugi-utilities
-    name: UGI Utilities
-    description: >-
-      UGI Utilities provides natural gas and electric distribution services to
-      approximately 700,000 customers in 45 counties in Pennsylvania and one county
-      in Maryland. Residential and commercial customers can manage accounts online,
-      start or stop service, pay bills, and enroll in energy assistance programs.
-      No public REST API documented.
-    humanURL: https://www.ugi.com
-    tags:
-      - Natural Gas
-      - Electric
-      - Utilities
-      - Pennsylvania
-      - Energy Distribution
-    properties:
-      - type: Website
-        url: https://www.ugi.com
-      - type: Support
-        url: https://www.ugi.com/contact-us/
-      - type: Documentation
-        url: https://www.ugi.com/for-your-business/
-
-  - aid: ugi:amerigas
-    name: AmeriGas Propane
-    description: >-
-      AmeriGas is the largest retail propane marketer in the United States, serving
-      approximately 1.5 million residential, commercial, industrial, and agricultural
-      customers across all 50 states. A wholly-owned subsidiary of UGI Corporation.
-      Limited public API access; propane delivery ordering and account management
-      available via web portal.
-    humanURL: https://www.amerigas.com
-    tags:
-      - Propane
-      - Energy
-      - Retail
-      - Distribution
-      - Delivery
-    properties:
-      - type: Website
-        url: https://www.amerigas.com
-      - type: Support
-        url: https://www.amerigas.com/contact-us
-
-  - aid: ugi:ugi-energy-services
-    name: UGI Energy Services
-    description: >-
-      UGI Energy Services (UGIES) is a competitive natural gas and electricity supplier
-      and midstream service provider for commercial and industrial customers in the
-      northeastern United States. Offers energy procurement, supply, and management services.
-    humanURL: https://ugies.com
-    tags:
-      - Natural Gas
-      - Electricity
-      - Energy Services
-      - Commercial
-      - Industrial
-    properties:
-      - type: Website
-        url: https://ugies.com
-      - type: Support
-        url: https://ugies.com/contact/
-
   - aid: ugi:ugi-international
     name: UGI International
     description: >-
