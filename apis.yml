@@ -1,14 +1,12 @@
 aid: ugi
 url: https://raw.githubusercontent.com/api-evangelist/ugi/refs/heads/main/apis.yml
 name: UGI Corporation
-description: >-
-  UGI Corporation is a Fortune 500 international energy distribution and services company
-  headquartered in King of Prussia, Pennsylvania. UGI distributes natural gas, liquid
-  propane, and electricity primarily through four business segments: UGI Utilities (natural
-  gas and electric distribution in Pennsylvania), AmeriGas Propane (largest US propane
-  marketer), Midstream and Marketing, and UGI International (European energy distribution).
-  No public developer API has been identified; the company primarily uses EDI and utility
-  industry standards for B2B data exchange.
+description: 'UGI Corporation is a Fortune 500 international energy distribution and services company
+  headquartered in King of Prussia, Pennsylvania. UGI distributes natural gas, liquid propane, and electricity
+  primarily through four business segments: UGI Utilities (natural gas and electric distribution in Pennsylvania),
+  AmeriGas Propane (largest US propane marketer), Midstream and Marketing, and UGI International (European
+  energy distribution). No public developer API has been identified; the company primarily uses EDI and
+  utility industry standards for B2B data exchange.'
 type: Index
 deliveryModel:
   model: unknown
@@ -30,59 +28,59 @@ accessModel:
   label: Enterprise
   confidence: medium
   source:
-    - plans
+  - plans
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ugi.png
 access: 3rd-Party
 created: '2026-05-03'
-modified: '2026-07-25'
+modified: '2026-09-16'
 position: Consuming
 tags:
-  - Energy
-  - Utilities
-  - Natural Gas
-  - Propane
-  - Electric
-  - Fortune 500
-  - Pennsylvania
+- Energy
+- Utilities
+- Natural Gas
+- Propane
+- Electric
+- Fortune 500
+- Pennsylvania
 common:
-  - type: DomainSecurity
-    url: security/ugi-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/ugi-corporation
-  - type: Contact
-    url: https://www.ugi.com
-  - type: Contact
-    url: https://www.amerigas.com
-  - type: Contact
-    url: https://ugies.com
+- type: Website
+  url: https://ugicorp.com
+- type: DomainSecurity
+  url: security/ugi-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ugi-corporation
+- type: Contact
+  url: https://www.ugi.com
+- type: Contact
+  url: https://www.amerigas.com
+- type: Contact
+  url: https://ugies.com
 apis:
-  - aid: ugi:ugi-international
-    name: UGI International
-    description: >-
-      UGI International manages LPG and natural gas distribution operations across
-      Europe, primarily through Flaga, AvantiGas, and other regional brands serving
-      17 European countries with liquid petroleum gas distribution and energy services.
-    humanURL: https://www.ugicorp.com/company/our-businesses/ugi-international/
-    tags:
-      - LPG
-      - Natural Gas
-      - Europe
-      - International
-      - Energy Distribution
-    properties:
-      - type: Website
-        url: https://www.ugicorp.com/company/our-businesses/ugi-international/
-
+- aid: ugi:ugi-international
+  name: UGI International
+  description: UGI International manages LPG and natural gas distribution operations across Europe, primarily
+    through Flaga, AvantiGas, and other regional brands serving 17 European countries with liquid petroleum
+    gas distribution and energy services.
+  humanURL: https://www.ugicorp.com/company/our-businesses/ugi-international/
+  tags:
+  - LPG
+  - Natural Gas
+  - Europe
+  - International
+  - Energy Distribution
+  properties:
+  - type: Website
+    url: https://www.ugicorp.com/company/our-businesses/ugi-international/
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 specificationVersion: '0.23'
 properties:
-  - url: vocabulary/ugi-vocabulary.yml
-    type: Vocabulary
-  - url: json-ld/ugi-context.jsonld
-    type: JSONLDContext
-  - url: json-schema/ugi-energy-account-schema.json
-    type: JSONSchema
+- url: vocabulary/ugi-vocabulary.yml
+  type: Vocabulary
+- url: json-ld/ugi-context.jsonld
+  type: JSONLDContext
+- url: json-schema/ugi-energy-account-schema.json
+  type: JSONSchema
