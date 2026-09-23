@@ -1,7 +1,9 @@
 ---
 title: 'Press Release: UGI Selects IntelliShift for Vehicle AI Video ...'
 url: https://intellishift.com/resources/blog/press-release-ugi-selects-intellishift-for-vehicle-ai-video-deployment/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"UGI" press release artificial intelligence'
 position: 5
 source: serpapi-google

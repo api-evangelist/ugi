@@ -1,7 +1,9 @@
 ---
 title: UGI Energy Services and Prime Data Centers Forge ...
 url: https://www.ugicorp.com/news-releases/news-release-details/ugi-energy-services-and-prime-data-centers-forge-strategic
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"UGI" press release artificial intelligence'
 position: 1
 source: serpapi-google

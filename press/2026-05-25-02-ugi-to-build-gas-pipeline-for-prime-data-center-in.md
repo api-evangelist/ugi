@@ -1,7 +1,9 @@
 ---
 title: UGI to build gas pipeline for Prime data center in ...
 url: https://www.investing.com/news/company-news/ugi-to-build-gas-pipeline-for-prime-data-center-in-pennsylvania-93CH-4665359
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"UGI" press release artificial intelligence'
 position: 2
 source: serpapi-google

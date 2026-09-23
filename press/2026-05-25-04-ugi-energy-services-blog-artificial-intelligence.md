@@ -1,7 +1,9 @@
 ---
 title: UGI Energy Services Blog | artificial intelligence
 url: https://blog.ugies.com/topic/artificial-intelligence
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"UGI" press release artificial intelligence'
 position: 4
 source: serpapi-google
