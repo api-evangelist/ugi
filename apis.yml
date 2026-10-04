@@ -1,6 +1,6 @@
 aid: ugi
 url: https://raw.githubusercontent.com/api-evangelist/ugi/refs/heads/main/apis.yml
-name: UGI Corporation
+name: UGI
 description: 'UGI Corporation is a Fortune 500 international energy distribution and services company
   headquartered in King of Prussia, Pennsylvania. UGI distributes natural gas, liquid propane, and electricity
   primarily through four business segments: UGI Utilities (natural gas and electric distribution in Pennsylvania),
@@ -84,3 +84,4 @@ properties:
   type: JSONLDContext
 - url: json-schema/ugi-energy-account-schema.json
   type: JSONSchema
+x-legal-name: UGI Corporation
